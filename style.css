@@ -1,0 +1,95 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(93, 197, 93);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+   color: rgb(23, 19, 16);
+   font-family: sans-serif;
+   font-weight: bolder;
+   display: flex;
+   
+   background-color: green;
+  
+   margin-top: 2rem;
+   font-size: 3rem;
+  border-style: dotted;
+   border-radius: 2rem;
+   width: fit-content;
+   padding:10px;
+
+}
+.heading1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.matrix {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(3, 1fr);    /* 3 equal rows */
+
+  margin-top: 5rem;
+  background-color: red;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 1rem;
+  padding: 0.5rem; /* optional for spacing inside */
+  position: relative;
+}
+.cell{
+    font-size: 4rem;
+    border-color: rgb(11, 11, 100);
+    border: solid blue;
+    border-width: 4px;
+    border-left: none;
+}
+.upper{
+    border-top: none;
+}
+.right{
+    border-right: none;
+}
+.bottom{
+    border-bottom: none;
+}
+
+.players{
+    display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+     gap: 4rem;
+   margin-top: 3rem;
+   margin-bottom: 2rem;
+   background-color: rgb(38, 205, 38);
+   padding: 1.5rem;
+   color: white;
+}
+.player{
+    background-color: rgb(162, 203, 74);
+    font-size: 2rem;
+    padding: 6px;
+    color: black;
+    font-weight: bolder;
+    border: solid rgb(228, 8, 8);
+    border-width: 4px;
+    border-radius: 1rem;
+  
+}
+.player1{
+  position: absolute;
+transform: translate(-10rem,-20rem );
+
+}
+.player2{
+    position: absolute;
+transform: translate(23.4rem,-20rem );
+}
+.cell:hover{
+    cursor: pointer;
+}
